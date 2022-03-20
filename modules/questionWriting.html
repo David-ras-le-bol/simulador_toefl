@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulator TOEFL</title>
+
+    <!-- IMPORT CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/questionWriting.css">
+    <link rel="stylesheet" href="../plugins/css/sweetalert2.min.css">
+    <!-- IMPORT JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="../plugins/js/sweetalert2.all.min.js"></script>
+    <script src="../plugins/js/sweetalert2.min.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid bgPrimary txtLight">
+        <div class="container profile text-center">
+            <div class="d-flex justify-content-center">
+                <img src="../img/listening.jpg" alt="profile">
+                <p>Luis Pablo Canul García</p>
+            </div>
+            <div class="col-12 d-flex justify-content-center">
+                <h6>Writting</h6>
+                <h6>1/30</h6>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="container">
+            
+            <div class="titleQuestion col-12">
+                <h2>15. By declining to run for presidential reelection in 1808, Tomas Jefferson ______ the two-term tradition still followed, with but a few exceptions, to the present day.</h2>
+                <hr>
+            </div>
+            <div class="options col-12">
+                <form action="">
+                    <div class="contOption">
+                        <input type="radio" id="a" value="to help establish">
+                        <label for="a"><span>A. </span>to help establish</label>
+                    </div>
+                    <div class="contOption">
+                        <input type="radio" id="b" value="helped the establishment">
+                        <label for="b"><span>B. </span>helped the establishment</label>
+                    </div>
+                    <div class="contOption">
+                        <input type="radio" id="c" value="helped to establish">
+                        <label for="c"><span>C. </span>helped to establish</label>
+                    </div>
+                    <div class="contOption">
+                        <input type="radio" id="d" value="in helping to establish">
+                        <label for="d"><span>D. </span>in helping to establish</label>
+                    </div>
+
+                    <!-- <div class="contbtn d-flex justify-content-center" onclick="alert()">
+                        <div class="btnPrincipal">
+                            <a href="#">Siguiente</a>
+                        </div>
+                    </div> -->
+
+                    <!-- TODO: No borrar, este boton se usaria para el envio de datos en php  -->
+                    <div class="col-12 d-flex justify-content-center">
+                        <input onclick="alert()" class="btnSiguiente" type="submit" value="Siguiente">
+                    </div> 
+                </form>
+            </div>
+            
+        </div>
+
+    </div>
+
+    <div class="container-fluid fTest">
+        <div class="col-12 d-flex justify-content-between">
+            <div class="temporizador d-flex">
+                <h5 class="minutos" id="minutos">30</h5>
+                <h5>:</h5>
+                <h5 class="minutos" id="segundos">00</h5>
+            </div>
+            <div class="cancelTest">
+                <div class="btnCancelText" onclick="canceltest()">
+                    <p>Cancel Test</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="../js/questionWriting.js"></script>
+
+</html>

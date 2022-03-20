@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* ==========================================
+General Styles
+========================================== */
+
+.txtLight{
+    color: #fff;
+}
+
+.txtDark{
+    color: #000000;
+}
+
+.btnPrincipal a{
+    width: auto;
+    height: 50px;
+    margin: auto;
+    font-weight: bold;
+    background: url(../img/btnBackground.svg);
+    padding: 15px 20px 5px 20px;
+    color: #fff;
+    text-decoration: none;
+    transition: all .2s ease-out;
+    font-family: principalFont;
+}
+.btnPrincipal a:hover{
+    transform: scale(1.1);
+    color: #0e3f55;
+    box-shadow: 4px 5px 5px rgba(0, 0, 0, 0.377);
+}
+
+/*-------FUENTES-------*/
+/*Principal*/
+@font-face {
+    font-family: principalFont;
+    src: url(../fonts/static/Comfortaa-Light.ttf);
+}
+
+.font1{
+    font-family: principalFont;
+}
+
+.font1B{
+    font-family: principalFont;
+    font-weight: bolder;
+}
+
+.bgPrimary{
+    background: #0e5e94;
+}
+
+/* ==========================================
+End General Styles
+========================================== */
