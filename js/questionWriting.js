@@ -2,7 +2,6 @@ function alert() {
     Swal.fire({
         icon: 'success',
         title: 'Correcto',
-        allowOutsideClick: false
     })
 }
 
