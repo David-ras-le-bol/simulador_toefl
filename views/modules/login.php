@@ -27,7 +27,7 @@
 
             <div class="btns">
                 <input  class="btn" type="submit" value="LOGIN"> 
-                <a id="link" href="n_usuario.html">Registrarse</a>
+                <a id="link" href="register.php">Registrarse</a>
 
             </div>
 
