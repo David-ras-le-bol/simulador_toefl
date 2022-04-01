@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html lang="es">
-    
-    <body>
-      
-      
-        
-    <div class="cont_all">
+<div class="cont_all">
 
     <div class="cont_img" >
         
@@ -27,11 +20,11 @@
 
             <div class="btns">
                 <input  class="btn" type="submit" value="LOGIN"> 
-                <a id="link" href="register.php">Registrarse</a>
+                <a id="link" href="register">Registrarse</a>
 
             </div>
 
-    </form>
+        </form>
 
 
     </div> 
@@ -40,10 +33,4 @@
         
         
         
-        <footer>
-            
-        </footer>
-       
-   </body>
-
-</html>
+<div>
