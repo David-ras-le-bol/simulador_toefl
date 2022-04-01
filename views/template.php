@@ -36,7 +36,7 @@
             $rutas = explode("/", $_GET["ruta"]);
             //var_dump($rutas);     //divide las rutas en un array
 
-            if($rutas[0] == "login" || $rutas[0] == "register"){
+            if($rutas[0] == "login" || $rutas[0] == "register" || $rutas[0] == "forgotPassword"){
 
                 include 'modules/'.$rutas[0].'.php';
 

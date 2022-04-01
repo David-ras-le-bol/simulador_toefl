@@ -76,6 +76,11 @@ HEADER
     cursor: pointer;
 }
 
+.navConfig ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
 .introImg{
     position: relative;
     height: auto;

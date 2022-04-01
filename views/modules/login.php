@@ -16,7 +16,7 @@
             <label>Contraseña</label>
             <input type="password" class="inputs"  required>
 
-            <a  href="recuperar_con.html">Olvide mi contraseña</a>
+            <a  href="forgotPassword">Olvide mi contraseña</a>
 
             <div class="btns">
                 <input  class="btn" type="submit" value="LOGIN"> 
