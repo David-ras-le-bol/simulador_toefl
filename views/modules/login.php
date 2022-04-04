@@ -34,3 +34,18 @@
         
         
 <div>
+
+<?php
+    // if(isset($rutas[1])){
+        
+    //     if($rutas[1] == "hola"){
+    //         echo "Hola";
+    //     }else{
+    //         echo "Error 404";
+    //     }
+
+
+    // }else{
+    //     Pegar aqui el html si es que pasara algo en la ruta 2
+    // }
+?>

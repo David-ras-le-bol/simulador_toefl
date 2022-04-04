@@ -62,74 +62,74 @@
     </div>
 </div>
 <!-- we_do -->
-    <div id="we_do"  class="we_do">
-        <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="titlepage">
-                    <h2>What we do?</h2><br>
-                </div>
+<div id="we_do"  class="we_do">
+    <div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="titlepage">
+                <h2>What we do?</h2><br>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="we_do_box">
-                    <i><img src="<?php echo $url;?>views/img/plan1.png" alt="#"/></i>
-                    <h4>Prepare You</h4>
-                    <p>Our TOEFL simulator is intented to be used by people who want to prepare themselves for an upcoming TOEFL ITP exam they might take, while also improving their English Skills along the way.</p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="we_do_box">
-                    <i><img src="<?php echo $url;?>views/img/plan4.png" alt="#"/></i>
-                    <h4>Grade You</h4>
-                    <p>We follow the same structrure and grading systems you will find in a real TOEFL exam so you get an accurate idea of your strengths and weaknesses </p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="we_do_box">
-                    <i><img src="<?php echo $url;?>views/img/plan2.png" alt="#"/></i>
-                    <h4>Give you the Tools</h4>
-                    <p>Nowadays the ability to speak English fluently has become a must in most jobs across the globe. Our goal is to help you sharpen your skills in hopes that you might find better oportunities for yourself in the future. </p>
-                </div>
-            </div>
-        </div>
         </div>
     </div>
-    <!-- end we_do -->
-    <!--  footer -->
-    <footer>
-        <div class="footer">
-        <div class="cont">
-            <div class="row">
-            <div class = "footer-col">
-                <h4>About TOEFL</h4>
-                <ul>
-                    <li><a href="#">What is the TOEFL Test ?</a></li>
-                    <li><a href="#">How the TOEFL is divided</a></li>
-                    <li><a href="#">Advantages</a></li>
-                </ul>
-            </div>
-            <div class = "footer-col">
-                <h4>About us</h4>
-                <ul>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Blog</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                    <h4>Follow Us</h4>
-                    <ul>
-                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                        <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
-                    </ul>
-                </div>
-                <div class="col-md-10 offset-md-1">
-                <p>Copyright 2022 All Right Reserved</p>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="we_do_box">
+                <i><img src="<?php echo $url;?>views/img/plan1.png" alt="#"/></i>
+                <h4>Prepare You</h4>
+                <p>Our TOEFL simulator is intented to be used by people who want to prepare themselves for an upcoming TOEFL ITP exam they might take, while also improving their English Skills along the way.</p>
             </div>
         </div>
-    </footer>
-    <!-- end footer -->
+        <div class="col-md-4">
+            <div class="we_do_box">
+                <i><img src="<?php echo $url;?>views/img/plan4.png" alt="#"/></i>
+                <h4>Grade You</h4>
+                <p>We follow the same structrure and grading systems you will find in a real TOEFL exam so you get an accurate idea of your strengths and weaknesses </p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="we_do_box">
+                <i><img src="<?php echo $url;?>views/img/plan2.png" alt="#"/></i>
+                <h4>Give you the Tools</h4>
+                <p>Nowadays the ability to speak English fluently has become a must in most jobs across the globe. Our goal is to help you sharpen your skills in hopes that you might find better oportunities for yourself in the future. </p>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+<!-- end we_do -->
+<!--  footer -->
+<footer>
+    <div class="footer">
+    <div class="cont">
+        <div class="row">
+        <div class = "footer-col">
+            <h4>About TOEFL</h4>
+            <ul>
+                <li><a href="#">What is the TOEFL Test ?</a></li>
+                <li><a href="#">How the TOEFL is divided</a></li>
+                <li><a href="#">Advantages</a></li>
+            </ul>
+        </div>
+        <div class = "footer-col">
+            <h4>About us</h4>
+            <ul>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+                <h4>Follow Us</h4>
+                <ul>
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+                </ul>
+            </div>
+            <div class="col-md-10 offset-md-1">
+            <p>Copyright 2022 All Right Reserved</p>
+        </div>
+    </div>
+</footer>
+<!-- end footer -->
