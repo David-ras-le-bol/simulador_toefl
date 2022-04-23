@@ -6,9 +6,44 @@
                     <a href="index.html"><img src="<?php echo $url;?>views/img/logo.png" alt="#" /></a>
                 </div>
                 <ul class="d-flex">
-                    <li><a href="register">sing up</a></li>
-                    <li> | </li>
-                    <li><a href="login">log in</a></li>
+
+                    <?php
+
+                        if(isset($_SESSION["validarSesion"])){
+
+                            if($_SESSION["validarSesion"] == "ok"){
+
+                                if($_SESSION["foto"] != ""){
+
+                                    echo '<li><a href="register">
+                                        <img class="rounded-circle" src="'.$url.$_SESSION["foto"].'" width="40px">
+                                    </a></li>';
+
+                                }else{
+
+                                    echo '<li><a href="register">
+                                        <img class="rounded-circle" src="'.$url.'views/img/usuarios/default/profile.jpg" width="40px">
+                                    </a></li>';
+
+                                }
+
+                                echo '<li>|</li>
+                                    <li><a href="'.$url.'perfil">Ver Perfil</a></li>
+                                    <li>|</li>
+                                    <li><a href="'.$url.'salir">Salir</a></li>';
+
+                            }
+
+                        }else{
+
+                            echo '<li><a href="register">sing up</a></li>
+                            <li> | </li>
+                            <li><a href="login">log in</a></li>';
+
+                        }
+
+                    ?>
+                    
                 </ul>
             </nav>
         </div>
@@ -51,7 +86,25 @@
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus commodi minus in aut quas provident, sint ipsam quo dignissimos, placeat asperiores officiis blanditiis, nesciunt perspiciatis obcaecati eveniet officia labore accusantium.
                     </p>
                     <div class="btnPrincipal">
-                        <a href="#">Start</a>
+
+                        <?php
+
+                            if(isset($_SESSION["validarSesion"])){
+
+                                if($_SESSION["validarSesion"] == "ok"){
+
+                                    echo '<a href="login">Start</a>';
+
+                                }
+
+                            }else{
+
+                                echo '<button onclick="noPaso()" href="">Start</button>';
+
+                            }
+
+                        ?>
+                        
                     </div>
                 </div>
                 

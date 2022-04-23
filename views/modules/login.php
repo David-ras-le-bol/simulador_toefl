@@ -8,21 +8,26 @@
     
         <h1 class="titulo">Iniciar sesión</h1>
         
-        <form  action="" method="post">
+        <form method="post">
 
-            <label>Correo electrónico</label>
-            <input type="text" class="inputs"  required>
+            <label for="ingEmail">Correo electrónico</label>
+            <input type="email" class="inputs" name="ingEmail" id="ingEmail" required>
 
-            <label>Contraseña</label>
-            <input type="password" class="inputs"  required>
+            <label for="ingPassword">Contraseña</label>
+            <input type="password" class="inputs" name="ingPassword" id="ingPassword" required>
 
             <a  href="forgotPassword">Olvide mi contraseña</a>
 
             <div class="btns">
                 <input  class="btn" type="submit" value="LOGIN"> 
-                <a id="link" href="register">Registrarse</a>
 
+                <a id="link" href="register">Registrarse</a>
             </div>
+
+            <?php
+                    $ingreso = new UsuariosController();
+                    $ingreso -> ingresoUsuarioCtr();
+               ?>
 
         </form>
 

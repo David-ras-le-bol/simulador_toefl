@@ -1,8 +1,10 @@
 <?php
 
+require_once "connection.php";
+
 class UsuariosModel{
 
-     // ======================
+    // ======================
     // REGISTRO DE USUARIOS
     // ======================
 
@@ -24,6 +26,23 @@ class UsuariosModel{
             return "error";
 
         }
+
+    }
+
+    /*======================================================
+        MOSTRAR USUARIO
+    ======================================================*/
+    public static function mdlMostrarUsuario($tabla, $item, $valor){
+
+        $stmt = Connection::connect()->prepare("SELECT * FROM $tabla WHERE $item = :$item");
+
+        $stmt -> bindParam(":".$item, $valor, PDO::PARAM_STR);
+
+        $stmt -> execute();
+
+        return $stmt -> fetch();
+        
+        $stmt = null;
 
     }
 

@@ -15,7 +15,7 @@ General Styles
     color: #000000;
 }
 
-.btnPrincipal a{
+.btnPrincipal a, .btnPrincipal button{
     width: auto;
     height: 50px;
     margin: auto;
@@ -26,8 +26,9 @@ General Styles
     text-decoration: none;
     transition: all .2s ease-out;
     font-family: principalFont;
+    border: none;
 }
-.btnPrincipal a:hover{
+.btnPrincipal a:hover, .btnPrincipal button:hover{
     transform: scale(1.1);
     color: #0e3f55;
     box-shadow: 4px 5px 5px rgba(0, 0, 0, 0.377);
