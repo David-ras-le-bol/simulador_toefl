@@ -1,3 +1,7 @@
+<?php
+    //session_start();
+    // Para que funcione en el navegador tenemos que poner aqui la variable de sesion
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +11,9 @@
     <title>Simulator TOEFL</title>
 
     <?php
+
+        session_start();
+        // VARIABLES DE SESION: Se utilizan para privatizar una pagina o cuando necesitamos mantener almacenado una informacion y pasarla entre diferentes paginas
 
 		$url = Route::ctrRoute();
 
@@ -26,6 +33,7 @@
     <script src="https://kit.fontawesome.com/666ce126ea.js" crossorigin="anonymous"></script>
     <script src="<?php echo $url; ?>views/plugins/js/sweetalert2.all.min.js"></script>
     <script src="<?php echo $url; ?>views/plugins/js/sweetalert2.min.js"></script>
+    <script src="<?php echo $url; ?>views/plugins/js/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
@@ -52,6 +60,10 @@
         }
 
     ?>
+
+    <input type="hidden" value="<?php echo $url; ?>" id="rutaOculta">
+
+    <script src="<?php echo $url; ?>views/js/usuarios.js"></script>
     
 </body>
 </html>
