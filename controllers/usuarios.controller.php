@@ -185,8 +185,7 @@ class UsuariosController {
                         //Datos del archivo
                         $mail->isHTML(true);                                  //Acepta archivos con formato HTML
                         $mail->Subject = 'Recuperacion de password';           //Asunto
-                        $mail->Body    = 'La contraseña temporal asignada a su cuenta es  '.$valor2.'  cambiela al ingresar al sistema.';  //Mensaje 
-    
+                        $mail->Body    = 'La contraseña temporal asignada a su cuenta es  '.$valor2.'  cambiela al ingresar al sistema.';  //Mensaje     
     
                         $mail->send();                                        //Envia mensaje
         
