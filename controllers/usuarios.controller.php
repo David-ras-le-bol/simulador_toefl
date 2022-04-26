@@ -186,9 +186,6 @@ class UsuariosController {
 }
 }
     
-<<<<<<< HEAD
-}//CLASE
-=======
                         $mail->send();                                        //Envia mensaje
         
                                 echo '<script>
@@ -222,4 +219,3 @@ class UsuariosController {
 
 
 }
->>>>>>> TOEFL-canul
