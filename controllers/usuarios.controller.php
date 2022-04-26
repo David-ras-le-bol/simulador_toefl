@@ -202,7 +202,7 @@ class UsuariosController {
                             })
                         </script>';
    
-                    } catch (Exception $e) {                                   //Si falla el envio del msj. muestra mensaje
+                    } catch (Exception $e) {//Si falla el envio del msj. muestra mensaje
                         echo "No se envio el email : {$mail->ErrorInfo}";
                     }
                      
