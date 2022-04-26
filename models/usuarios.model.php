@@ -46,4 +46,25 @@ class UsuariosModel{
 
     }
 
+    // ======================
+    // OLVIDE CONTRASEÑA
+    // ======================
+    public static function  mdlOlvidoPassword($tabla,$id,$item2,$valor2){
+        
+        $stmt=Connection::connect()->prepare("UPDATE $tabla set $item2=:$item2 where id=:id");
+        $stmt -> bindParam(":".$item2,$valor2, PDO::PARAM_STR);
+        $stmt -> bindParam(":id",$id, PDO::PARAM_INT);
+        
+        if($stmt -> execute()){
+
+            return "ok";
+
+        }else{
+
+            return "error";
+
+        }
+        
+    }
+
 }

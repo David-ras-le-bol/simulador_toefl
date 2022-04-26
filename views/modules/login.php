@@ -25,9 +25,9 @@
             </div>
 
             <?php
-                    $ingreso = new UsuariosController();
-                    $ingreso -> ingresoUsuarioCtr();
-               ?>
+                $ingreso = new UsuariosController();
+                $ingreso -> ingresoUsuarioCtr();
+            ?>
 
         </form>
 

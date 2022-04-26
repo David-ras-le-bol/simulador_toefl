@@ -12,15 +12,19 @@
 
                       <h1 class="titulo">Olvidaste tu contraseña?</h1>
 
-                      <form  action="http://localhost/simulador_toefl/controllers/password.controller.php" method="post"   >
+                      <form method="post"   >
 
-                            <label>Ingresa tu correo electrónico</label>
-                            <input type="email" class="inputs" name="email" required>
+                              <label>Ingresa tu correo electrónico</label>
+                              <input type="email" class="inputs" id="pass_email" name="pass_email" required>
 
-                            <div class="btns">
-                                 <input  class="btn" type="submit" value="SEND"> 
+                              <div class="btns">
+                                    <input  class="btn" type="submit" value="SEND"> 
+                              </div>
 
-                            </div>
+                              <?php
+                                    $password = new UsuariosController();
+                                    $password -> ctrOlvidoPassword();
+                              ?>
 
                       </form>  
 
