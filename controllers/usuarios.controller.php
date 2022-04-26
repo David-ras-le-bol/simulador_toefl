@@ -180,11 +180,7 @@ class UsuariosController {
      
     }
     
-    
-    
 
-}
-}
     
                         $mail->send();                                        //Envia mensaje
         
