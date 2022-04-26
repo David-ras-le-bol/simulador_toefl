@@ -1,10 +1,8 @@
 <?php
 
-require_once "connection.php";
-
 class UsuariosModel{
 
-    // ======================
+     // ======================
     // REGISTRO DE USUARIOS
     // ======================
 
@@ -28,27 +26,24 @@ class UsuariosModel{
         }
 
     }
-
+    
     /*======================================================
         MOSTRAR USUARIO
     ======================================================*/
     public static function mdlMostrarUsuario($tabla, $item, $valor){
-
         $stmt = Connection::connect()->prepare("SELECT * FROM $tabla WHERE $item = :$item");
-
         $stmt -> bindParam(":".$item, $valor, PDO::PARAM_STR);
-
         $stmt -> execute();
-
         return $stmt -> fetch();
-        
+       
         $stmt = null;
-
     }
-
-    // ======================
+    
+    
+         // ======================
     // OLVIDE CONTRASEÑA
     // ======================
+    
     public static function  mdlOlvidoPassword($tabla,$id,$item2,$valor2){
         
         $stmt=Connection::connect()->prepare("UPDATE $tabla set $item2=:$item2 where id=:id");
