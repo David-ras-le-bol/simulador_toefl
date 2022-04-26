@@ -186,4 +186,40 @@ class UsuariosController {
 }
 }
     
+<<<<<<< HEAD
 }//CLASE
+=======
+                        $mail->send();                                        //Envia mensaje
+        
+                                echo '<script>
+                            Swal.fire({
+                                icon: "success",
+                                title: "Revise su correo, se le ha enviado su contraseña temporal",
+                                confirmButtonText: "Ok"
+                            }).then((result) => {
+                                if(result.isConfirmed){
+                                    window.location.href = "http://localhost/simulador_toefl/login";
+                                }
+                            })
+                        </script>';
+   
+                    } catch (Exception $e) {//Si falla el envio del msj. muestra mensaje
+                        echo "No se envio el email : {$mail->ErrorInfo}";
+                    }
+                     
+                }else{
+               
+                    echo '<script>
+                        Swal.fire({
+                            icon: "error",
+                            title: "El correo no existe"
+                        }) 
+                    </script>';
+                }
+            }
+        }
+    }
+
+
+}
+>>>>>>> TOEFL-canul
