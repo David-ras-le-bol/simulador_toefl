@@ -1,12 +1,7 @@
 <?php
 
-<<<<<<< HEAD
     use  PHPMailer \ PHPMailer \ PHPMailer ;
     use  PHPMailer \ PHPMailer \ Exception ;
-=======
-    use PHPMailer\PHPMailer\PHPMailer;
-    use PHPMailer\PHPMailer\Exception;
->>>>>>> TOEFL-canul
 
     require 'controllers/PHPMailer /Exception.php' ;
     require 'controllers/PHPMailer /PHPMailer.php' ;
