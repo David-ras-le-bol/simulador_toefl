@@ -25,6 +25,8 @@
     <link rel="stylesheet" href="<?php echo $url; ?>views/css/principal.css">
     <link rel="stylesheet" href="<?php echo $url; ?>views/css/general.css">
     <link rel="stylesheet" href="<?php echo $url; ?>views/css/styleLogin.css">
+    <link rel="stylesheet" href="<?php echo $url; ?>views/css/fulltest.css">
+    <link rel="stylesheet" href="<?php echo $url; ?>views/css/question.css">
     
     <!-- IMPORT JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
@@ -44,10 +46,12 @@
 
         if(isset($_GET["ruta"])){
 
+            //var_dump($_GET["ruta"]);
+
             $rutas = explode("/", $_GET["ruta"]);
             //var_dump($rutas);     //divide las rutas en un array
 
-            if($rutas[0] == "login" || $rutas[0] == "register" || $rutas[0] == "forgotPassword" || $rutas[0] == "inicio"){
+            if($rutas[0] == "login" || $rutas[0] == "register" || $rutas[0] == "forgotPassword" || $rutas[0] == "inicio" || $rutas[0] == "salir" || $rutas[0] == "tests" || $rutas[0] == "fullTest" || $rutas[0] == "writing" || $rutas[0] == "reading" || $rutas[0] == "listening"){
 
                 include 'modules/'.$rutas[0].'.php';
 
@@ -64,6 +68,7 @@
     <input type="hidden" value="<?php echo $url; ?>" id="rutaOculta">
 
     <script src="<?php echo $url; ?>views/js/usuarios.js"></script>
+    <script src="<?php echo $url; ?>views/js/questionWriting.js"></script>
     
 </body>
 </html>

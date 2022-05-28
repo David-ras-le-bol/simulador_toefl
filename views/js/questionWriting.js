@@ -40,7 +40,7 @@ function canceltest() {
 // ================================
 // TEMPORIZADOR
 // ================================
-let minutos = 30;
+let minutos = 1;
 let segundos = 0;
 cargarSegundo();
 

@@ -21,24 +21,24 @@
 
                                 }else{
 
-                                    echo '<li><a href="register">
+                                    echo '<li><a class="txtLight" href="register">
                                         <img class="rounded-circle" src="'.$url.'views/img/usuarios/default/profile.jpg" width="40px">
                                     </a></li>';
 
                                 }
 
                                 echo '<li>|</li>
-                                    <li><a href="'.$url.'perfil">Ver Perfil</a></li>
+                                    <li><a class="txtLight" href="'.$url.'perfil">Ver Perfil</a></li>
                                     <li>|</li>
-                                    <li><a href="'.$url.'salir">Salir</a></li>';
+                                    <li><a class="txtLight" href="'.$url.'salir">Salir</a></li>';
 
                             }
 
                         }else{
 
-                            echo '<li><a href="register">sing up</a></li>
+                            echo '<li><a class="txtLight" href="register">sing up</a></li>
                             <li> | </li>
-                            <li><a href="login">log in</a></li>';
+                            <li><a class="txtLight" href="login">log in</a></li>';
 
                         }
 
@@ -93,7 +93,7 @@
 
                                 if($_SESSION["validarSesion"] == "ok"){
 
-                                    echo '<a href="login">Start</a>';
+                                    echo '<a href="tests">Start</a>';
 
                                 }
 

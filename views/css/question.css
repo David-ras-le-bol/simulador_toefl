@@ -21,11 +21,18 @@
 
 .contOption{
     margin: 10px 0;
+    display: flex;
+}
+.contOption input{
+    background: coral;
+    height: 45px;
+    width: 15px;
 }
 
 .contOption label{
     font-size: 1.2rem;
-    margin-left: 10px;
+    margin-left: 0px;
+    color: #000;
 }
 
 .contOption label span{

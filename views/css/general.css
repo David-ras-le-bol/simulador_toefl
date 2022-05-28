@@ -15,6 +15,10 @@ General Styles
     color: #000000;
 }
 
+.bgLight{
+    background: #fff;
+}
+
 .btnPrincipal a, .btnPrincipal button{
     width: auto;
     height: 50px;
